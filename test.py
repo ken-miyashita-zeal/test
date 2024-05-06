@@ -12,7 +12,7 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
 # CSVファイルの出力先パス
-output_path = output\test.csv'
+output_path = output/'test.csv'
 
 # 「AWS」の記載がある記事のタイトルとURLを取得し、test.csvに書き込む
 with open(output_path, 'w', newline='', encoding='utf-8-sig') as csvfile:
